@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color:#F3DFC1;
+}
+#heading{
+    text-align: center;
+    display: block;
+    font-family: 'Times New Roman', serif;
+    color: black;
+    padding-bottom: 15px;
+    width: 100%;
+    font-size: 35px;
+    height: 80px;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+
+}
+img{
+    display: inline;
+    float: right;
+    border-radius: 4px;
+    margin: 10px;
+}
+.content{
+    margin: 10px;
+    margin-top: 40px;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#bio{
+    font-size: 25px;
+    padding-left: 0px;
+
+}
+
+blockquote {
+    
+	font-family: 'Special Elite', cursive;
+	color: #3f3f5a;
+	display: inline-block;
+	flex-direction: column;
+    margin-left: 15px;
+	justify-content: center;
+	font-weight: 60;
+	font-size: 2rem;
+	max-width: 800px;
+	line-height: 1.0;
+    margin: 0px;
+	position: relative;
+	padding: .5rem;
+    margin-top: 60px;
+    
+}
+
+blockquote:before,
+blockquote:after {
+	color: gray;
+	font-size: 8rem;
+	width: 8rem;
+	height: 4rem;
+}
+blockquote:before {
+	content: '“';
+	left: -5rem;
+	top: -2rem;
+}
+blockquote:after {
+	content: '”';
+	right: -2rem;
+	bottom: 3rem;
+}
+cite {
+    margin-left: 30px;
+	line-height: 3;
+	text-align: left;
+    
+}
