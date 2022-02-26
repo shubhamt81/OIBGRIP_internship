@@ -13,9 +13,9 @@ filterOption.addEventListener("click", filterTodo);
 
 
 
-function addTodo(e) {
+function addTodo(s) {
   
-  e.preventDefault();
+  s.preventDefault();
   const todoDiv = document.createElement("div");
   todoDiv.classList.add("todo");
   
@@ -40,15 +40,15 @@ function addTodo(e) {
   todoList.appendChild(todoDiv);
 }
 
-function deleteTodo(e) {
-  const item = e.target;
+function deleteTodo(s) {
+  const item = s.target;
 
   if (item.classList[0] === "trash-btn") {
     
     const todo = item.parentElement;
     todo.classList.add("fall");
     removeLocalTodos(todo);
-    todo.addEventListener("transitionend", e => {
+    todo.addEventListener("transitionend", s => {
       todo.remove();
     });
   }
@@ -59,10 +59,10 @@ function deleteTodo(e) {
   }
 }
 
-function filterTodo(e) {
+function filterTodo(s) {
   const todos = todoList.childNodes;
   todos.forEach(function(todo) {
-    switch (e.target.value) {
+    switch (s.target.value) {
       case "all":
         todo.style.display = "flex";
         break;
